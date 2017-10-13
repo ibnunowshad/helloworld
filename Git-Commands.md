@@ -71,7 +71,7 @@ Pushes all the modified local objects to the remote repository and advances its 
 
 17. `git remote`  
 Shows all the remote versions of your repository. Example:  
-`git remote add origin git://git.tusisobar.com:PORT/staging.git`
+`git remote add origin git://git.domain.com:PORT/staging.git`
 
 18. `git log`  
 Shows a listing of commits on a branch including the corresponding details.
