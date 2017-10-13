@@ -2,9 +2,6 @@ Download the puttygen.exe file and generate the public and private key.  And exp
 And then copy and paste it in C:\Users\Habeeb\.ssh 
 We have save the file as id_rsa – private and  id_rsa_pub   - public. 
 
-GIT TUTORIAL:
- - https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
-
 First go to the folder and then initiate git
 - `cd /path/to/folder`
 
