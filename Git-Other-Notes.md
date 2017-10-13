@@ -8,12 +8,11 @@ GIT TUTORIAL:
 First go to the folder and then initiate git
 - `cd /path/to/folder`
 
-```git init 
+`git init 
 git config --global user.name "john"
 git config --global user.email "john@gmail.com"
 git remote add origin ssh://git@git.domain.com:5214/folder/project.git
-git pull origin master  --> first pull from remote```
-
+git pull origin master`  --> first pull from remote
 
 - `git branch develop`  - create new branch
 - `git checkout develop`  - swithed to branch 'develop'
