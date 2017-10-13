@@ -20,12 +20,11 @@ git pull origin master`  --> first pull from remote
 - `git status` - look for the status of the commits`
 
 
-To check the changes
+### To check the changes
 - `git diff`
 
 ### PULL DATA:
 - `git pull origin dev`  - pull data from the git server ie From ssh://git@git.domain.com:5214/folder/project.git
-
 
 ### PUSH DATA: - THIS comment will push data to specified branch (develop)
 `git add .
@@ -35,7 +34,7 @@ git push origin develop`
 TO REMOVE THE GIT AND THEN YOU CAN INITIATE AGAIN 
 - `rm -rf .git`
 
-To reset the local branch if confilcts happen. 
+### To reset the local branch if confilcts happen. 
 `git fetch --all
 git reset --hard origin/dev` 
 
@@ -44,7 +43,6 @@ after reset push data
 git commit -m "changed file data"    
 git push origin dev`
 
-
 This below code to set false if we get some replacing issue.
 - `git config core.autocrlf false`
 
@@ -52,7 +50,6 @@ This below code to set false if we get some replacing issue.
 `git checkout uat
 git merge dev
 git push origin uat`
-
 
 ### Delete a remote branch
  - `git push origin --delete <branch>` # Git version 1.7.0 or newer 
@@ -68,6 +65,7 @@ git push origin uat`
  - `git branch -dr <remote>/<branch>` # Shorter
  - `git fetch <remote> --prune` # Delete multiple obsolete tracking branches
  - `git fetch <remote> -p` # Shorter
+
 
 ### Create a new repository
 
@@ -102,9 +100,9 @@ Copy / Duplicating git repo from one repository to another:
 `git clone --bare https://github.com/exampleuser/old-repository.git`
 
 ### Mirror-push to the new repository
-cd old-repository.git
-`git push --mirror https://github.com/exampleuser/new-repository.git`
+- `cd old-repository.git`
+- `git push --mirror https://github.com/exampleuser/new-repository.git`
 
 ### Remove our temporary local repository
-cd ..
-`rm -rf old-repository.git ` 
+- `cd ..`
+- `rm -rf old-repository.git ` 
