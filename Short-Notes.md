@@ -5,7 +5,7 @@
 - Once again goto authoring template and In item properties, Look for : 
 Default Presentation Template: link with the specified presentation template. 
 - `Content - create site area and in properties-> profile add "ibm.portal.toolbar.NewContent" to show as a page component`
-- Once again goto Content and add new contents..
+- Once again goto Content and add default contents..
 
 **Dynamic contents:**
 
