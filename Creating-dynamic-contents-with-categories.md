@@ -5,7 +5,7 @@
 5) Create List Presentation(LP) and menu  
 6) Create Contents under site area
 
-Steps 1 to 3 are same as [creating dynamic contents in wcm](https://git.tusisobar.com/kickoff/platform/ibm-webshpere/wikis/creating-dynamic-contents-in-wcm)
+Steps 1 to 3 are same as [creating dynamic contents in wcm](https://github.com/habeebmaraikar/hello-world/wiki/Creating-dynamic-contents-in-wcm)
 
 **4) Create Categories**
 
