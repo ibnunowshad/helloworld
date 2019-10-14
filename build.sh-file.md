@@ -3,16 +3,16 @@
 #locale
 folder=$1
 
-#from git repo "git@gitlab.com:project-eva/nz-site.git" 
+#from git repo  
 fromgiturl=$2
-fromgitbranch=$3  #dev
+fromgitbranch=$3  
 
-#to main git repo git@gitlab.com:project-eva/us-region.git
+#to main git repo 
 togiturl=$4
-togitbranch=$5  #zespriqa
+togitbranch=$5  
 
 
-echo "Hello, Zespri Kiwi!" $folder
+echo "Hello, welcome to the site!" $folder
 echo Building..., $folder
 
 
@@ -51,7 +51,7 @@ git checkout -b $togitbranch
 git pull origin $togitbranch
 
 
-#goto build folder and delete the existing build folder eg:en-US
+#goto build folder and delete the existing build folder
 cd build
 rm -rf $folder 
 cd ..  # go back to mainrepo folder
