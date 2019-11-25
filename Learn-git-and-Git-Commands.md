@@ -1,3 +1,69 @@
+### Introduction of git
+
+Git is version control system for tracking changes in computer files and coordinating work on those files among multiple people.
+
+Git is free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+
+### Create
+
+`$ git init`
+###### Create a new local repository.
+
+The `git init` command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
+
+`$ git clone <url>`
+###### Clone an existing repository.
+
+`git clone` is a Git command line utility which is used to target an existing repository and create a clone, or copy of target repository. Cloning a local or remote repository. Clone a bare repository. Using shallow options to partially clone repositories. Git URL syntax and supported protocols.
+
+### Local Changes
+
+`$ git status`
+##### Changes files in your working directory.
+
+The `git status` command displays the state of the working directory and the stating area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
+
+`$ git diff`
+##### Changes to tracked files.
+
+`git diff` is a multi-use Git command that when executed runs a diff function on Git data sources. These data sources can be commits, branches, files and more. The `git diff` command is often used along with `git status` and `git log` to analyze the current state of a Git repo.
+
+`$ git diff <filename|filepath>`
+
+Show are list out the change of specific file as per comparison to previous commit.
+
+`$ git add . | $ git add ..`
+##### Add all current changes to the next commit.
+
+This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only part of the changes made to the working tree files applied, or remove paths that do not exist in the working tree anymore.
+
+The "index" holds a snapshots of content of the working tree, and it is the snapshot that is taken as the contents of the next commit. Thus after making any changes to the working tree, and before running the commit command, you must use the add command to add any new or modified files to the index.
+
+This command can be performed multiple times before a commit. It only adds the content of the specified file(s) at the time the add command is run; if you want to subsequent changes included in the next commit, then you must run `git add` again to add the new content to the index.
+
+The `git status` command can be used to obtain a summary of which files have changes that are staged for the next commit.
+
+The `git add` command will not add ignored files by default. If any ignored files were explicitly specified on the command line, `git add` will fail with a list of ignored files. Ignored files reached by directory recursion on filename globbing performed by Git (quote your globs before the shell) will be silently ignored. The `git add` command can be used to add ignored files with the -f (force) option.
+
+`$ git add FILENAME`
+##### Add particular file changes to the next commit.
+
+`$ git add -p <File>
+##### Add some changes in <file> to the next commit.
+
+`$ git commit -m 'Commit message'
+##### Add commit message for stagging files (For green colored files)
+
+Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs. The -m option is mutually exclusive with -c, -C, and -F.
+
+
+
+
+
+
+ 
 #### Useful common commands for everyone reference here.
 
 1. `git config`  
