@@ -1,8 +1,6 @@
-Welcome to the hello-world wiki!
+Welcome to the helloworld wiki!
 
 Read pages at right side
 
 Git Tutorial:
-- https://www.kernel.org/pub/software/scm/git/docs/gittutorial.html
-- http://nvie.com/posts/a-successful-git-branching-model/
-- https://danielkummer.github.io/git-flow-cheatsheet/
+1.  [Learn git and Git Commands](https://gitlab.com/cloud-infrastructure/helloworld/wikis/Learn-git-and-Git-commands)
