@@ -58,6 +58,33 @@ The `git add` command will not add ignored files by default. If any ignored file
 
 Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs. The -m option is mutually exclusive with -c, -C, and -F.
 
+`$ git commit -a`
+
+##### Commit all local changes in tracked files.
+
+Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
+
+`$ git commit --amend`
+
+##### Change the last commit or revert 
+
+`Don’t amend publish commits.`
+
+`$ git commit --amend -m "an updated commit message"` 
+
+##### Change the last commit or update the last commit message
+
+`Don’t amend publish commits.`
+
+`$ git commit --amend --no-edit`
+
+The --no-edit flag will allow you to make the amendment to your commit without changing its commit message.
+
+`Don’t amend publish commits.`
+
+
+
+
 
 
 
