@@ -8,33 +8,33 @@ Git is easy to learn and has a tiny footprint with lightning fast performance. I
 
 ### Create
 
-`$ git init`
+#### `$ git init`
 ###### Create a new local repository.
 
 The `git init` command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
 
-`$ git clone <url>`
+#### `$ git clone <url>`
 ###### Clone an existing repository.
 
 `git clone` is a Git command line utility which is used to target an existing repository and create a clone, or copy of target repository. Cloning a local or remote repository. Clone a bare repository. Using shallow options to partially clone repositories. Git URL syntax and supported protocols.
 
 ### Local Changes
 
-`$ git status`
+#### `$ git status`
 ##### Changes files in your working directory.
 
 The `git status` command displays the state of the working directory and the stating area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git. Status output does not show you any information regarding the committed project history.
 
-`$ git diff`
+#### `$ git diff`
 ##### Changes to tracked files.
 
 `git diff` is a multi-use Git command that when executed runs a diff function on Git data sources. These data sources can be commits, branches, files and more. The `git diff` command is often used along with `git status` and `git log` to analyze the current state of a Git repo.
 
-`$ git diff <filename|filepath>`
+#### `$ git diff <filename|filepath>`
 
 Show are list out the change of specific file as per comparison to previous commit.
 
-`$ git add . | $ git add ..`
+#### `$ git add . | $ git add ..`
 ##### Add all current changes to the next commit.
 
 This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit. It typically adds the current content of existing paths as a whole, but with some options it can also be used to add content with only part of the changes made to the working tree files applied, or remove paths that do not exist in the working tree anymore.
@@ -47,36 +47,36 @@ The `git status` command can be used to obtain a summary of which files have cha
 
 The `git add` command will not add ignored files by default. If any ignored files were explicitly specified on the command line, `git add` will fail with a list of ignored files. Ignored files reached by directory recursion on filename globbing performed by Git (quote your globs before the shell) will be silently ignored. The `git add` command can be used to add ignored files with the -f (force) option.
 
-`$ git add FILENAME`
+#### `$ git add FILENAME`
 ##### Add particular file changes to the next commit.
 
-`$ git add -p <File>`
+#### `$ git add -p <File>`
 ##### Add some changes in <file> to the next commit.
 
-`$ git commit -m 'Commit message'`
+#### `$ git commit -m 'Commit message'`
 ##### Add commit message for stagging files (For green colored files)
 
 Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs. The -m option is mutually exclusive with -c, -C, and -F.
 
-`$ git commit -a`
+#### `$ git commit -a`
 
 ##### Commit all local changes in tracked files.
 
 Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.
 
-`$ git commit --amend`
+#### `$ git commit --amend`
 
 ##### Change the last commit or revert 
 
 `Don’t amend publish commits.`
 
-`$ git commit --amend -m "an updated commit message"` 
+#### `$ git commit --amend -m "an updated commit message"` 
 
 ##### Change the last commit or update the last commit message
 
 `Don’t amend publish commits.`
 
-`$ git commit --amend --no-edit`
+#### `$ git commit --amend --no-edit`
 
 The --no-edit flag will allow you to make the amendment to your commit without changing its commit message.
 
