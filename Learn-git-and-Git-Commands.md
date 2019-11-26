@@ -50,10 +50,10 @@ The `git add` command will not add ignored files by default. If any ignored file
 `$ git add FILENAME`
 ##### Add particular file changes to the next commit.
 
-`$ git add -p <File>
+`$ git add -p <File>`
 ##### Add some changes in <file> to the next commit.
 
-`$ git commit -m 'Commit message'
+`$ git commit -m 'Commit message'`
 ##### Add commit message for stagging files (For green colored files)
 
 Use the given <msg> as the commit message. If multiple -m options are given, their values are concatenated as separate paragraphs. The -m option is mutually exclusive with -c, -C, and -F.
